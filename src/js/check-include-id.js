@@ -1,4 +1,3 @@
-import { STORAGE_WATCHED, STORAGE_QUEUE } from './local-storage/local-storage';
 import { getWatched, getQueue } from './local-storage/init-form';
 // theme
 import methodsStorage from './storage-theme';

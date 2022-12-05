@@ -1,4 +1,3 @@
-import { definitionGenre } from '../definition-genre';
 import cardHTML from '../../tamlates/gallery-card.hbs';
 import poster from '../../images/no-poster.png';
 
@@ -19,4 +18,10 @@ export function appendCardMarkup(cardData, element) {
   });
 
   element.insertAdjacentHTML('beforeend', cardHTML(newArrCard));
+}
+function definitionGenre(id) {
+  const listAllGenres = JSON.parse(sessionStorage.getItem('genres'));
+  const searchedGenre = listAllGenres.find(genre => genre.id === id);
+
+  return searchedGenre.name;
 }

@@ -1,8 +1,7 @@
 import { contentLoad } from './trends';
 import { onFormSubmit } from './search';
 import { refs } from '../local-storage/refs-homepage';
-import { inputTogleEl } from '../theme';
-import { onInputClick } from '../theme';
+import { inputTogleEl, onInputClick} from '../theme';
 
 document.addEventListener('DOMContentLoaded', () => {
   contentLoad(1);
