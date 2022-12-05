@@ -2,15 +2,17 @@
 import * as basicLightbox from 'basiclightbox';
 import createModalMurkupById from '../tamlates/modal.hbs';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import { addSelectedWatched, addSelectedQueue } from './local-storage';
+import {
+  addSelectedWatched,
+  addSelectedQueue,
+} from './local-storage/local-storage';
 import { initId } from './check-include-id';
 import { MovieAPI } from './movie-API';
 import { ModalPagination } from './modal-pagination';
-import { refs } from './refs-homepage';
-import { inputTogleEl } from './theme';
+import { refs } from './local-storage/refs-homepage';
 import methodsStorage from './storage-theme';
 import poster from '../images/no-poster.png';
-import no_trailer from '../images/no-trailer.png'
+import no_trailer from '../images/no-trailer.png';
 
 const THEME_KEY = 'theme';
 const movieApi = new MovieAPI();
@@ -122,7 +124,7 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 
- function onEscDown(e) {
+function onEscDown(e) {
   if (e.code === 'Escape') {
     closeModal();
   }
@@ -193,7 +195,7 @@ function setThemeOnModal() {
     btnWach.classList.remove('dark-theme-btn-wached');
     btnQueu.classList.remove('dark-theme-btn-wached');
     btnTrailer.classList.remove('dark-theme-btn-wached');
-    // btnHelp.classList.remove('dark-theme-btn-help');
+
     spanModalValue.classList.remove('dark-theme-bg');
     return;
   }
@@ -205,6 +207,6 @@ function setThemeOnModal() {
   btnWach.classList.add('dark-theme-btn-wached');
   btnQueu.classList.add('dark-theme-btn-wached');
   btnTrailer.classList.add('dark-theme-btn-wached');
-  // btnHelp.classList.add('dark-theme-btn-help');
+
   spanModalValue.classList.add('dark-theme-bg');
 }

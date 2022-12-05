@@ -1,5 +1,5 @@
 import methodsStorage from './storage-theme';
-import { ref, refs } from './refs-homepage';
+import { ref, refs } from './local-storage/refs-homepage';
 
 export const inputTogleEl = document.querySelector('.theme-switch__toggle');
 const iconLigthEl = document.querySelector('.sun-icon');

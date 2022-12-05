@@ -1,10 +1,9 @@
-
 import { getWatched, getQueue } from './init-form';
 export const STORAGE_WATCHED = 'watched-state';
 export const STORAGE_QUEUE = 'queue-state';
 // Theme
-import methodsStorage from './storage-theme';
-import { THEME_KEY } from './theme';
+import methodsStorage from '../storage-theme';
+import { THEME_KEY } from '../theme';
 // ================================
 
 export function addSelectedWatched(e) {
@@ -26,10 +25,10 @@ export function addSelectedWatched(e) {
     arrWatchedIds.push(imgId);
     // Theme
     const savedTheme = methodsStorage.load(THEME_KEY);
-     if (savedTheme) {
+    if (savedTheme) {
       btnWatched.classList.add('btn-add-active-dark');
     }
-//  ===================
+    //  ===================
     btnWatched.classList.add('btn-add-active');
   }
 
@@ -55,7 +54,7 @@ export function addSelectedQueue(e) {
     arrQueueIds.push(imgId);
     // Theme
     const savedTheme = methodsStorage.load(THEME_KEY);
-     if (savedTheme) {
+    if (savedTheme) {
       btnQueue.classList.add('btn-add-active-dark');
     }
     // ===========================

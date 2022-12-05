@@ -1,7 +1,6 @@
-import { definitionGenre } from './definition-genre';
-import cardHTML from '../tamlates/gallery-card.hbs';
-import poster from '../images/no-poster.png'
-
+import { definitionGenre } from '../definition-genre';
+import cardHTML from '../../tamlates/gallery-card.hbs';
+import poster from '../../images/no-poster.png';
 
 export function appendCardMarkup(cardData, element) {
   const newArrCard = cardData.results.map(result => {
@@ -14,8 +13,8 @@ export function appendCardMarkup(cardData, element) {
       vote_average: result.vote_average?.toFixed(1),
       genre_names: result.genre_ids?.map(id => definitionGenre(id)).join(', '),
       overview: result.overview
-      ? `${result.overview}`
-      :'These is no description for now...',
+        ? `${result.overview}`
+        : 'These is no description for now...',
     };
   });
 

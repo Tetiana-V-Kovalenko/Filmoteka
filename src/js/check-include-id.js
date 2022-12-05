@@ -1,5 +1,5 @@
-import { STORAGE_WATCHED, STORAGE_QUEUE } from './local-storage';
-import { getWatched, getQueue } from './init-form';
+import { STORAGE_WATCHED, STORAGE_QUEUE } from './local-storage/local-storage';
+import { getWatched, getQueue } from './local-storage/init-form';
 // theme
 import methodsStorage from './storage-theme';
 import { THEME_KEY } from './theme';
@@ -23,7 +23,7 @@ export function initId() {
     if (savedTheme) {
       btnWatched.classList.add('btn-add-active-dark');
     }
-// ===============================================
+    // ===============================================
     btnWatched.classList.add('btn-add-active');
   }
   if (persistedFiltersQueue.includes(ImgId)) {
@@ -31,7 +31,7 @@ export function initId() {
     if (savedTheme) {
       btnQueue.classList.add('btn-add-active-dark');
     }
-   // =============================================
+    // =============================================
     btnQueue.classList.add('btn-add-active');
   }
 }

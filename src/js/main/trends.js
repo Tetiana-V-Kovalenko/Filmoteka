@@ -1,10 +1,10 @@
-import { refs } from './refs-homepage';
+import { refs } from '../local-storage/refs-homepage';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import { MovieAPI } from './movie-API';
+import { MovieAPI } from '../movie-API';
 import { appendCardMarkup } from './appendCardMarkup';
-import { setGenresToStorage } from './session-storage';
+import { setGenresToStorage } from '../session-storage';
 // ==========theme
-import { setTheme } from './theme';
+import { setTheme } from '../theme';
 
 const movieApi = new MovieAPI();
 
