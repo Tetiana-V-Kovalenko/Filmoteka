@@ -1,6 +1,6 @@
 import { pagination } from '../pagination';
 import { appendCardMarkup } from './appendCardMarkup';
-import { refs } from '../local-storage/refs-homepage';
+import { refs } from './refs-homepage';
 import image from '../../images/search-cat/crying_cat@1x.png';
 import { MovieAPI } from '../movie-API';
 import { Notify } from 'notiflix';

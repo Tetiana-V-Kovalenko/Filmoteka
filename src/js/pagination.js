@@ -1,8 +1,8 @@
 import Pagination from 'tui-pagination';
 import 'tui-pagination/dist/tui-pagination.css';
-import { getFilmCardsBySearch, isSubmitActiv } from './main/search';
-import { contentLoad } from './main/trends';
-import { refs } from './local-storage/refs-homepage';
+import { getFilmCardsBySearch, isSubmitActiv } from './main/searching';
+import { contentLoad } from './main/trending';
+import { refs } from './main/refs-homepage';
 import { setTheme } from './theme';
 
 const options = {

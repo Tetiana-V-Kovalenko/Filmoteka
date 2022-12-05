@@ -1,4 +1,4 @@
-import { refs } from './local-storage/refs-homepage';
+import { refs } from './main/refs-homepage';
 
 const openModalStudents = () => {
   refs.studentModal.classList.remove('visually-hidden');

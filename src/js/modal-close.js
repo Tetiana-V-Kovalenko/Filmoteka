@@ -9,7 +9,7 @@ import {
 import { initId } from './check-include-id';
 import { MovieAPI } from './movie-API';
 import { ModalPagination } from './modal-pagination';
-import { refs } from './local-storage/refs-homepage';
+import { refs } from './main/refs-homepage';
 import methodsStorage from './storage-theme';
 import poster from '../images/no-poster.png';
 import no_trailer from '../images/no-trailer.png';

@@ -1,4 +1,4 @@
-import { refs } from '../local-storage/refs-homepage';
+import { refs } from './refs-homepage';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { MovieAPI } from '../movie-API';
 import { appendCardMarkup } from './appendCardMarkup';
